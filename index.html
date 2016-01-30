@@ -25,8 +25,17 @@ git push origin child_repos
 
 即可。
 
+准备合并dev分支，请注意--no-ff参数，表示禁用Fast forward：
+
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ readme.txt |    1 +
+ 1 file changed, 1 insertion(+)
 
 
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+
+当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
 </p>
 </body>
 </html>
