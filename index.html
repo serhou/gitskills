@@ -8,6 +8,26 @@
  <h1>这里是美丽中国</h1>   
 <p>我们都有一个家名字叫中国，兄弟姐妹都很多，景色也不错！</p>
 <a>点我，访问美丽中国</a>
+<p>
+从github上clone子分支
+<br>
+正常情况下，我们在github上看到一个clone地址，git clone xxxxxxx.git后，默认clone进入的是master分支，如果想切换到某一个子分支，可以使用
+
+git checkout -b child_repos origin/child_repos
+
+其中，child_repos指的是目标子分支名，
+
+这时，使用git branch可以看到自己已经在子分支上，正常
+
+git pull origin child_repos
+
+git push origin child_repos
+
+即可。
+
+
+
+</p>
 </body>
 </html>
 
